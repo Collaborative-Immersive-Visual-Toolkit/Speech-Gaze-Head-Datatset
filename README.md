@@ -54,7 +54,7 @@ transcription : this is the data extracted from the audio files with the whisper
 
 ## Visualizations 
 
-The visualization section contains information about the vidsualized dataset. Dataset are visualized with d3.js and can be seen as webpages at the following [url] (https://graphs-for-collaborative-vr.web.app/)
+The visualization section contains information about the vidsualized dataset. Dataset are visualized with d3.js and can be seen as webpages at the following [url](https://graphs-for-collaborative-vr.web.app/)
 
 
 ### Dataset
