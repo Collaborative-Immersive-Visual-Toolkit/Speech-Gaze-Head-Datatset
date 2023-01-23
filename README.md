@@ -54,11 +54,39 @@ transcription : this is the data extracted from the audio files with the whisper
 
 ## Visualizations 
 
-The visualization section contains information about the vidsualized dataset. Dataset are visualized with d3.js and can be seen as webpages at the following [url](https://graphs-for-collaborative-vr.web.app/)
-
+The visualization section contains information about the vidsualized dataset. Dataset are visualized with d3.js and can be seen as webpages at the following [url](https://graphs-for-collaborative-vr.web.app/) each page is rendered on a web browser displayed in the VR environment with a size of 980px by 551px.
 
 ### Dataset
 
+The visualizations conists of 3 datasets: 
+
+- ***Movie Dataset***
+- ***Gender Bias in Movie Dataset***
+- ***Insurance risk in cars Datatset***
+
+Each Dataset contains 8 web pages:
+
+- ***Oscar***
+- ***Scatterplot1***
+- ***Scatterplot2***
+- ***BoxAndWhiskers***
+- ***BoxAndWhiskers2***
+- ***Histograms***
+- ***StackBarChart***
+- ***Instructions***
+
+
+
+### Layout and UV coordinates 
+
+Each Dataset pages is visualized in a round layout
+
+
+
+
+
 ### Textures
+
+In the texture folder 
 
 ### Elements bounding boxs 
