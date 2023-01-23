@@ -4,11 +4,15 @@
 
 The dataset contains 2 folders: ***Data***, ***Visualizations***
 
-The ***Data*** folders contains 10 foilders each representing one of the ***experimental session***.<br />
-Each ***experimental session*** folder is named with the ***dayNumber_hourNumber*** ( 365 days a hear 24 hours a day).<br />
-Each ***experimental session*** contains 3 ***experimental trials*** folder, each folder name is composed by the ***experimentalCondition_visualizationNumber***<br />
+### Data
+
+The ***Data*** folders contains 10 foilders each representing one of the ***experimental session***.
+Each ***experimental session*** folder is named with the ***dayNumber_hourNumber*** ( 365 days a hear 24 hours a day).
+Each ***experimental session*** contains 3 ***experimental trials*** folder, each folder name is composed by the ***experimentalCondition_visualizationNumber***
+
 The ***experimenta lConditions*** are 1 = "CoV", 2 = "CoV+Speech", 3 = "eye-cursor".<br />
 The ***visualization Number*** are 1 = "Movie Dataset", 2 = "Gender bias in Movie Dataset", 3 = "Car insurance risk Dataset".<br />
+
 Within each ***experimental trials*** there is a ***data.csv*** file, the section Columns describe the data contained with the CSV file. 
 
 ## Colums
@@ -50,7 +54,10 @@ transcription : this is the data extracted from the audio files with the whisper
 
 ## Visualizations 
 
-The visualization section contains information about the segmented environment 
+The visualization section contains information about the vidsualized dataset. Dataset are visualized with d3.js and can be seen as webpages at the following [url] (https://graphs-for-collaborative-vr.web.app/)
+
+
+### Dataset
 
 ### Textures
 
