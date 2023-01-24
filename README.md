@@ -82,7 +82,7 @@ Each Dataset contains 8 web pages:
 Each Dataset pages is visualized in a round layout
 
 
-
+<img src="https://github.com/Collaborative-Immersive-Visual-Toolkit/Speech-Gaze-Head-Datatset/blob/main/visualizations/layout.png?raw=true"  width="400" height="400" />
 
 
 ### Textures
