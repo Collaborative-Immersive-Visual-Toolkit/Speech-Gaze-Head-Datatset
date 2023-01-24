@@ -1,4 +1,4 @@
-# Collaborative Speech Gaze and Head Behavio Datatset
+# Collaborative Speech Gaze and Head Behaviour Datatset
 
 This dataset contains the verbal, head, and eye behaviour of ten pairs of participants performing a collaborative explorative data analysis task in VR; for more information about this, read the section Data. Furthermore, this dataset also contains the segmented and semantically annotated visual context of the explorative data analysis; for more information about this, read the section Visualizations. This dataset has been released with the paper Speech-Augmented Cone-of-Vision for Exploratory Data Analysis at CHI 2023.
 
