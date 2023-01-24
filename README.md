@@ -54,7 +54,7 @@ transcription : this is the data extracted from the audio files with the whisper
 
 ## Visualizations 
 
-The visualization section contains information about the vidsualized dataset. Dataset are visualized with d3.js and can be seen as webpages at the following [url](https://graphs-for-collaborative-vr.web.app/) each page is rendered on a web browser displayed in the VR environment with a size of 980px by 551px.
+The visualization section contains information about the vidsualized dataset. Dataset are visualized with d3.js and can be seen as webpages at the following [url](https://graphs-for-collaborative-vr.web.app/) each page is rendered on a web browser displayed in the VR environment with a size of ***980px by 551px***.
 
 ### Dataset
 
@@ -79,10 +79,10 @@ Each Dataset contains 8 web pages:
 
 ### Layout and UV coordinates 
 
-Each Dataset pages is visualized in a round layout
+Each Dataset pages is visualized in a round layout (see image below)
 
 
-<img src="https://github.com/Collaborative-Immersive-Visual-Toolkit/Speech-Gaze-Head-Datatset/blob/main/visualizations/layout.png?raw=true"  width="400" height="400" />
+<img src="https://github.com/Collaborative-Immersive-Visual-Toolkit/Speech-Gaze-Head-Datatset/blob/main/visualizations/layout.png?raw=true"  width="600" height="600" />
 
 
 ### Textures
