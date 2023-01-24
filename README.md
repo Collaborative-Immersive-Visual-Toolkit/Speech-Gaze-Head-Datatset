@@ -9,6 +9,7 @@ This dataset contains the verbal, head, and eye behaviour of ten pairs of partic
     journal = "TBD",
     doi = "10.1145/3544548.3581283"  }
 ```
+
 <img src="https://github.com/Collaborative-Immersive-Visual-Toolkit/Speech-Gaze-Head-Datatset/blob/main/visualizations/layout.png?raw=true"  width="400"/>
 
 ## Folder structure 
