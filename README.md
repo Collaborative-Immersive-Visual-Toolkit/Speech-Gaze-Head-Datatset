@@ -1,5 +1,7 @@
 # Collaborative Speech Gaze and Head Behavio Datatset
 
+This dataset containing the verbal, head, and eye behaviour of ten pairs of participants performing a collaborative explorative data analysis task in VR, for more information about this read the section ***Data***. Furtheremore this dataset contains also the segmented and semantically annotated visual context of the explorative data analsysis,  for more information about this read the section ***Visualizations***. This dataset has been released with the paper ***Speech-Augmented Cone-of-Vision for Exploratory Data Analysis*** at CHI 2023. 
+
 ## Folder structure 
 
 The dataset contains 2 folders: ***Data***, ***Visualizations***
@@ -13,9 +15,14 @@ Each ***experimental session*** contains 3 ***experimental trials*** folder, eac
 The ***experimenta lConditions*** are 1 = "CoV", 2 = "CoV+Speech", 3 = "eye-cursor".<br />
 The ***visualization Number*** are 1 = "Movie Dataset", 2 = "Gender bias in Movie Dataset", 3 = "Car insurance risk Dataset".<br />
 
-Within each ***experimental trials*** there is a ***data.csv*** file, the section Columns describe the data contained with the CSV file. 
+Within each ***experimental trials*** there is a ***data.csv*** file, the section Columns describe the data contained with the CSV file. For more information about the information contained in the  ***data.csv*** file read the section ***Columns***.
 
-## Colums
+### Visualizations
+
+The ***Visualization*** folder contains a ***texture*** folder which contains the 24 images (8 screen for each of the 3 dataset) furtheremore it contains ***keywords_coordinates.json*** containing the segmented and semantically annotated information of each datatset and 
+
+
+## data.csv
 
 Each  ***data.csv*** file contains the 218 columns.  <br />
 A part from ***time_seconds*** all other colums have a either ***U1*** ***U2*** prefix indicating the user. <br />
@@ -32,21 +39,21 @@ RightEyePosX,Y,Z : position in word coordinate of the players right eye <br />
 LeftEyeVecX,Y,Z : forward direction of the players left eye <br />
 RightEyeVecX,Y,Z : forward direction of the players right eye <br />	
 GazeX,Y,Z : word position of the intersection between the eyes forward vector (left and right) and the data 	<br />
-GazeU,V : texture positon of the intersection between the eyes forward vector (left and right) and the data  (this makes it easier to underst on which element the user is whatchig) 	<br />
+GazeU,V : normalized texture positon of the intersection between the eyes forward vector (left and right) and the data  (this makes it easier to underst on which element the user is whatchig) 	<br />
 ControllerRPosX,Y,Z : word position of the Right controller <br />	
 ControllerREAngX,Y,Z : euler angles of the Right controller  <br />	
 ControllerLPosX,Y,Z : word position of the Left controller <br />	
 ControllerLEAngX,Y,Z : euler angles of the Left controller <br /> 		
 PointerLeftX,Y,Z : word position of the intersection between the Left controller direction (use euler angles to calculate) and the data <br />
 PointerRightX,Y,Z : word position of the intersection between the Right controller direction (use euler angles to calculate) and the data <br />
-PointerLeftU,V : texture positon of the intersection between the Right controller direction and the data (this makes it easier to underst on which element the user is pointing at) 	<br />	
-PointerRightU,V : texture positon of the intersection between the Left controller direction and the data (this makes it easier to underst on which element the user is pointing at) <br />
+PointerLeftU,V : normalized texture positon of the intersection between the Right controller direction and the data (this makes it easier to underst on which element the user is pointing at) 	<br />	
+PointerRightU,V : normalized texture positon of the intersection between the Left controller direction and the data (this makes it easier to underst on which element the user is pointing at) <br />
 Condition : integer value indicating the experimental condition  ( 0 "undefined", 1 "CoV", 2 "CoV+Speech", 3 "eye-cursor" ) <br />
 Visualization : integer value indicating the dataset  ( 0 "undefined", 1 "Movie Dataset", 2 "Gender bias in Movie Dataset", 3 "Car insurance risk Dataset" )<br />
 InsightRecording : binary valu indicating if the user is recording an insight or not  ( 0 "particpant not recording" , 1 "particpant recording" )<br />
 VisualizationHalf :  integer value indicating which half of the visualization is beeing displayed ( 0 "first" , 1 "second" )	<br />
 HeadGazeX,Y,Z : word position of the intersection between the head forward vector and the data<br /> 	 	
-HeadGazeU,V : texture positon of the intersection between the head forward vector and the data  (this makes it easier to underst on which element the user head is pointing at) 	<br />
+HeadGazeU,V : normalized texture positon of the intersection between the head forward vector and the data  (this makes it easier to underst on which element the user head is pointing at) 	<br />
 HeadCone00_x to HeadCone19_x : U coordinate position of the 20 points of the projected CoV (for the CoV + Speech such coordinate are dynamic)<br />
 HeadCone00_y to HeadCone19_y : V coordinate position of the 20 points of the projected CoV (for the CoV + Speech such coordinate are dynamic)<br />
 transcription : this is the data extracted from the audio files with the whisper model (audio files not included due to anonimoization)	<br />
@@ -54,39 +61,42 @@ transcription : this is the data extracted from the audio files with the whisper
 
 ## Visualizations 
 
-The visualization section contains information about the vidsualized dataset. Dataset are visualized with d3.js and can be seen as webpages at the following [url](https://graphs-for-collaborative-vr.web.app/) each page is rendered on a web browser displayed in the VR environment with a size of ***980px by 551px***.
+The visualization section contains information about the vidsualized dataset. 
 
-### Dataset
+### Visualized Dataset
 
 The visualizations conists of 3 datasets: 
 
 - ***Movie Dataset***
-- ***Gender Bias in Movie Dataset***
+- ***Gender Bias in Movie Dataset*** 
 - ***Insurance risk in cars Datatset***
 
-Each Dataset contains 8 web pages:
+The  ***texture*** folder which contains the 24 images (8 screen for each of the 3 dataset), the ***Movie Dataset*** textures are named :
 
-- ***Oscar***
-- ***Scatterplot1***
-- ***Scatterplot2***
-- ***BoxAndWhiskers***
-- ***BoxAndWhiskers2***
-- ***Histograms***
-- ***StackBarChart***
-- ***Instructions***
+- ***Oscar.png***
+- ***Scatterplot1.png***
+- ***Scatterplot2.png***
+- ***BoxAndWhiskers.png***
+- ***BoxAndWhiskers2.png***
+- ***Histograms.png***
+- ***StackBarChart.png***
+- ***Instructions.png***
 
+The ***Gender Bias in Movie Dataset*** have the same names but with the suffix ***_Gender.png***
+The ***Insurance risk in cars Datatset*** have the same names but with the suffix ***_Third.png***
 
-
-### Layout and UV coordinates 
+### Layout 
 
 Each Dataset pages is visualized in a round layout (see image below)
 
-
 <img src="https://github.com/Collaborative-Immersive-Visual-Toolkit/Speech-Gaze-Head-Datatset/blob/main/visualizations/layout.png?raw=true"  width="657" height="413" />
 
+## U V Coordinates 
 
-### Texture
+As each page is rendered on a web browser displayed in the VR environment with a size of ***980px by 551px*** the total UV texture dimension is ***7344px by 551px***.
 
-In the texture folder 
+<img src="https://raw.githubusercontent.com/Collaborative-Immersive-Visual-Toolkit/Speech-Gaze-Head-Datatset/main/visualizations/UVtextures.png"  width="900"  />
 
 ### Elements bounding boxs 
+
+The elements bounding boxes are contained in the ***keywords_coordinates.json*** file and they can be loaded in to UV texture space with the python file ***LoadRoi.py***
