@@ -85,7 +85,7 @@ Each Dataset pages is visualized in a round layout (see image below)
 <img src="https://github.com/Collaborative-Immersive-Visual-Toolkit/Speech-Gaze-Head-Datatset/blob/main/visualizations/layout.png?raw=true"  width="657" height="413" />
 
 
-### Textures
+### Texture
 
 In the texture folder 
 
