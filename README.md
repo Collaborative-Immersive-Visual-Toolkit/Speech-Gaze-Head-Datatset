@@ -1,6 +1,15 @@
 # Collaborative Speech Gaze and Head Behavio Datatset
 
-This dataset containing the verbal, head, and eye behaviour of ten pairs of participants performing a collaborative explorative data analysis task in VR, for more information about this read the section ***Data***. Furtheremore this dataset contains also the segmented and semantically annotated visual context of the explorative data analsysis,  for more information about this read the section ***Visualizations***. This dataset has been released with the paper ***Speech-Augmented Cone-of-Vision for Exploratory Data Analysis*** at CHI 2023. 
+This dataset contains the verbal, head, and eye behaviour of ten pairs of participants performing a collaborative explorative data analysis task in VR; for more information about this, read the section Data. Furthermore, this dataset also contains the segmented and semantically annotated visual context of the explorative data analysis; for more information about this, read the section Visualizations. This dataset has been released with the paper Speech-Augmented Cone-of-Vision for Exploratory Data Analysis at CHI 2023.
+
+```
+@article{Bovo:2023,
+    author  = "Riccardo Bovo, Daniele Giunchi, Ludwig Sidenmark, Hans Gellersen, Enrico Costanza, Thomas Heinis", 
+    year    = 2011,
+    journal = "Unorganized Scholarly Impressions",
+    doi = "10.1145/3544548.3581283"  }
+```
+<img src="https://github.com/Collaborative-Immersive-Visual-Toolkit/Speech-Gaze-Head-Datatset/blob/main/visualizations/layout.png?raw=true"  width="400"/>
 
 ## Folder structure 
 
