@@ -5,7 +5,7 @@ This dataset contains the verbal, head, and eye behaviour of ten pairs of partic
 ```
 @article{Bovo:2023,
     author  = "Riccardo Bovo, Daniele Giunchi, Ludwig Sidenmark, Hans Gellersen, Enrico Costanza, Thomas Heinis", 
-    year    = 2011,
+    year    = 2023,
     journal = "Unorganized Scholarly Impressions",
     doi = "10.1145/3544548.3581283"  }
 ```
